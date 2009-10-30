@@ -27,7 +27,7 @@ module Radiant
     end
 
     class EntityStore < Rack::Cache::EntityStore::Disk
-      def initialize(root="#{Rails.root}/cache/entity")
+      def initialize(root="#{Rails.root}/tmp/cache/entity")
         super
         Radiant::Cache.entity_stores << self
       end
@@ -38,7 +38,7 @@ module Radiant
     end
 
     class MetaStore < Rack::Cache::MetaStore::Disk
-      def initialize(root="#{Rails.root}/cache/meta")
+      def initialize(root="#{Rails.root}/tmp/cache/meta")
         super
         Radiant::Cache.meta_stores << self
       end
