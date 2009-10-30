@@ -47,7 +47,9 @@ Radiant::Initializer.run do |config|
   #  :metastore => "radiant:cache/meta"
   #    Sets the meta store type and storage location.  We recommend you use
   #    radiant: since this will enable manual expiration and acceleration headers.
-  config.middleware.use ::Radiant::Cache
+  cconfig.middleware.use ::Radiant::Cache,
+    :entitystore => "radiant:tmp/cache/entity",
+    :metastore => "radiant:tmp/cache/meta"
 
   # Use the database for sessions instead of the cookie-based default,
   # which shouldn't be used to store highly confidential information
