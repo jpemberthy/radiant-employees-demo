@@ -5,3 +5,4 @@ tmp/**/*
 tmp/
 cache/**/*
 public/images/assets/*
+db/*.sqlite3
