@@ -18,6 +18,19 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
 
   add_index "config", ["key"], :name => "key", :unique => true
 
+  create_table "employees", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "title"
+    t.boolean  "management"
+    t.text     "profile"
+    t.text     "extended_profile"
+    t.string   "email"
+    t.integer  "show_order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "extension_meta", :force => true do |t|
     t.string  "name"
     t.integer "schema_version", :default => 0
@@ -33,6 +46,25 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
     t.integer  "updated_by_id"
     t.string   "content_type",  :limit => 40
     t.integer  "lock_version",                 :default => 0
+  end
+
+  create_table "page_attachments", :force => true do |t|
+    t.string   "content_type"
+    t.string   "filename"
+    t.integer  "size"
+    t.integer  "parent_id"
+    t.string   "thumbnail"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at"
+    t.integer  "created_by"
+    t.datetime "updated_at"
+    t.integer  "updated_by"
+    t.integer  "page_id"
+    t.string   "title"
+    t.string   "description"
+    t.integer  "position"
+    t.integer  "employee_id"
   end
 
   create_table "page_parts", :force => true do |t|
