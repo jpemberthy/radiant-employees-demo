@@ -1,5 +1,5 @@
 class EmployeesController < SiteController
-  # radiant_layout 'your_site_layout' #put here your public layout name.
+  radiant_layout 'normal' #put here your public layout name.
   no_login_required
   
   Page.send :attr_accessor, :employee
