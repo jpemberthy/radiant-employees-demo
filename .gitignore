@@ -4,4 +4,3 @@ index/*
 tmp/**/*
 tmp/
 cache/**/*
-db/*.sqlite3.db
