@@ -95,7 +95,6 @@ INSERT INTO "layouts" VALUES(1,'Normal','<!DOCTYPE html PUBLIC "-//W3C//DTD XHTM
       <div id="main">
         <div id="content-wrapper">
           <div id="content">
-            <r:unless_url matches="^/$"><h1><r:title /></h1></r:unless_url>
             <r:content />
             <r:if_content part="extended">
             <div id="extended">
@@ -115,9 +114,16 @@ INSERT INTO "layouts" VALUES(1,'Normal','<!DOCTYPE html PUBLIC "-//W3C//DTD XHTM
     </div>
   </body>
 </html>
-','2009-11-03 13:39:55','2009-11-03 13:39:55',1,NULL,NULL,0);
+','2009-11-03 13:39:55','2009-11-09 22:31:48',1,1,'',1);
 INSERT INTO "layouts" VALUES(2,'Stylesheet','<r:content />
-','2009-11-03 13:39:55','2009-11-03 13:39:55',1,NULL,'text/css',0);
+
+#content img {
+  border:1px solid #C7AF9A;
+  float:left;
+  margin:9px 14px 0 0;
+  padding:4px;
+}
+','2009-11-03 13:39:55','2009-11-09 22:42:55',1,1,'text/css',1);
 INSERT INTO "layouts" VALUES(3,'XML Feed','<r:content />
 ','2009-11-03 13:39:55','2009-11-03 13:39:55',1,NULL,'text/xml',0);
 CREATE TABLE "page_attachments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_type" varchar(255), "filename" varchar(255), "size" integer, "parent_id" integer, "thumbnail" varchar(255), "width" integer, "height" integer, "created_at" datetime, "created_by" integer, "updated_at" datetime, "updated_by" integer, "page_id" integer, "title" varchar(255), "description" varchar(255), "position" integer, "employee_id" integer);
