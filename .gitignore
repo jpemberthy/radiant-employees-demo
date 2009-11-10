@@ -5,3 +5,4 @@ tmp/**/*
 tmp/
 cache/**/*
 config/deploy.rb
+config/amazon_s3.yml
