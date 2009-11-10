@@ -4,3 +4,4 @@ index/*
 tmp/**/*
 tmp/
 cache/**/*
+config/deploy.rb
