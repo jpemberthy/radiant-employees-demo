@@ -4,7 +4,7 @@ Employees Extension Demo
 About
 ---
 
-A [live-demo][es] application for the [radiant-employees][re] extension.
+A [live-demo][es] application for the [radiant-employees-directory][re] extension.
 
 You can login to the [admin section][as] with the Radiant's default username/password.
 
@@ -13,6 +13,6 @@ You can login to the [admin section][as] with the Radiant's default username/pas
 
 Note, The demo database is recreated constantly.
 
-[re]: http://github.com/jpemberthy/radiant-employees
+[re]: http://github.com/jpemberthy/radiant-employees-directory
 [es]: http://radiant-employees.mertd.com/
 [as]: http://radiant-employees.mertd.com/admin/login
