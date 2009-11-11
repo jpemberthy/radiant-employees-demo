@@ -13,4 +13,4 @@ test:
 
 production:
   adapter: sqlite3
-  database: db/production.sqlite3.db
+  database: db/development.sqlite3.db
