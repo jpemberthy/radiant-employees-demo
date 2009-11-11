@@ -15,4 +15,4 @@ Note, The demo database is recreated constantly.
 
 [re]: http://github.com/jpemberthy/radiant-employees
 [es]: http://radiant-employees.mertd.com/
-[as]: http://radiant-employees.mertd.com//admin/login
+[as]: http://radiant-employees.mertd.com/admin/login
