@@ -7,6 +7,7 @@ class PageAttachment < ActiveRecord::Base
                  :resize_to => '350x350',
                  :max_size => 10.megabytes,
                  :partition => false,
+                 :path_prefix => 'public/images/assets',
                  :processor => 'Rmagick'
   
   validates_as_attachment
